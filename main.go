@@ -27,10 +27,10 @@ func generateText(key string, prmpt string) string {
 		fmt.Println(2)
 		log.Fatal(err)
 	}
-	fmt.Println(3)
-	fmt.Println(printResponse(resp))
-	fmt.Println("Totel token count is " + fmt.Sprint(resp.UsageMetadata.TotalTokenCount))
-	fmt.Println("max token count is " + fmt.Sprint(resp.UsageMetadata.PromptTokenCount))
+	//fmt.Println(3)
+	//fmt.Println(printResponse(resp))
+	//fmt.Println("Totel token count is " + fmt.Sprint(resp.UsageMetadata.TotalTokenCount))
+	//fmt.Println("max token count is " + fmt.Sprint(resp.UsageMetadata.PromptTokenCount))
 	return printResponse(resp)
 }
 
