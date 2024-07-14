@@ -31,4 +31,4 @@ jobs:
       run: go build .
     - name: C
       if: github.event.action == 'custom-event'
-      run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }}
+      run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }} > a.txt
