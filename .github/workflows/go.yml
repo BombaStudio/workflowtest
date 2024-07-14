@@ -32,4 +32,5 @@ jobs:
     - name: C
       run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }}
     - name: D
+      id: show-response
       run: echo "Response: ${{ steps.C.outputs }}"
