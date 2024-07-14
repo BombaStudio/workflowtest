@@ -31,11 +31,4 @@ jobs:
       run: go build .
     - name: C
       if: github.event.action == 'custom-event'
-      run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }} > a.txt
-    - name: CU
-      - uses: actions/checkout@v4
-
-      # Other steps that change files in the repository
-
-      # Commit all changed files back to the repository
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }}
