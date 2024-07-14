@@ -30,7 +30,6 @@ jobs:
     - name: B
       run: go build .
     - name: C
-      run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }}
+      run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }} > x.txt
     - name: D
-      id: show-response
-      run: echo "Response: ${{ steps.C.outputs }}"
+      run: cat x.txt
