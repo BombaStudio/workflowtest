@@ -30,6 +30,5 @@ jobs:
     - name: B
       run: go build .
     - name: C
+      if: github.event.action == 'custom-event'
       run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }}
-    - name: D
-      run: echo "Captured Response: ${{ steps.C.outputs.response }}"
