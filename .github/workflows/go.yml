@@ -28,4 +28,4 @@ jobs:
     - name: B
       run: go build .
     - name: C
-      run: go test -cmd "hi gemini" -key ${{ secrets.KEY }}
+      run: go test main -cmd "hi gemini" -key ${{ secrets.KEY }}
