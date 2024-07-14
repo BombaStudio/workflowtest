@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"flag"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("test")
+	cmd := flag.String("cmd", "", "")
+	flag.Parse()
+	fmt.Printf("my cmd: \"%v\"\n", string(*cmd))
 }
