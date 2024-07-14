@@ -31,3 +31,5 @@ jobs:
       run: go build .
     - name: C
       run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }}
+    - name: D
+      run: echo "Response: ${{ steps.C.outputs }}"
