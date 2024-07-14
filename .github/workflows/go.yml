@@ -23,3 +23,7 @@ jobs:
 
     - name: Build
       run: go version
+    - name: A
+      run: go get .
+    - name: B
+      run: go build -o main
