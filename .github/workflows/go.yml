@@ -22,4 +22,4 @@ jobs:
         go-version: '1.22.5'
 
     - name: Build
-      run: go run ./..
+      run: go run ..
