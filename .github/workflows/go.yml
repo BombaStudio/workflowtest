@@ -22,4 +22,4 @@ jobs:
         go-version: '1.22.5'
 
     - name: Build
-      run: echo "test"
+      run: go version
