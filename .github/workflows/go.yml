@@ -26,6 +26,6 @@ jobs:
     - name: A
       run: go get .
     - name: B
-      run: go build -v main
+      run: go build . main
     - name: C
       run: main -cmd "hi gemini" -key ${{ secrets.KEY }}
