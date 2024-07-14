@@ -26,4 +26,4 @@ jobs:
     - name: A
       run: go get .
     - name: B
-      run: go build -o main
+      run: go run .
