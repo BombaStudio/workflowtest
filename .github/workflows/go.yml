@@ -24,13 +24,10 @@ jobs:
         go-version: '1.22.5'
 
     - name: Build
-      if: github.event.action != 'custom-event'
       run: go version
     - name: A
-      if: github.event.action != 'custom-event'
       run: go get .
     - name: B
-      if: github.event.action != 'custom-event'
       run: go build .
     - name: C
       if: github.event.action == 'custom-event'
