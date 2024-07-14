@@ -32,4 +32,5 @@ jobs:
     - name: C
       run: ./main -cmd "hi gemini" -key ${{ secrets.KEY }} > x.txt
     - name: D
+      if: github.event.action == 'custom-event'
       run: cat x.txt
